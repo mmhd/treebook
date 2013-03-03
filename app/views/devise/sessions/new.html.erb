@@ -1,10 +1,12 @@
 <div class="row">
 	<div class="span4">
-		<%= simple_form_for(resource, :as => resource_name, :url => session_path(resource_name), html: { class: "well" }) do |f| %>
+		<%= simple_form_for(resource, :as => resource_name, 
+																	:url => session_path(resource_name), 
+																	html: { class: "well" }) do |f| %>
 
 		<fieldset>
-			<legend>Sign In</legend>
-
+			<h4>Sign In</h4>
+			<hr>
 			<%= f.input :email %>
 			<%= f.input :password %>
 
